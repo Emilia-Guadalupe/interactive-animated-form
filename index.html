@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <form method="post" action="javascript: void(0);" id="login-form" class="login-form" autocomplete="off">
+            <h1>Login form</h1>
+            <figure aria-hidden="true">
+                <div class="person-body"></div>
+                <div class="neck skin"></div>
+                <div class="head skin">
+                  <div class="eyes"></div>
+                  <div class="mouth"></div>
+                </div>
+                <div class="hair"></div>
+                <div class="ears"></div>
+                <div class="shirt-1"></div>
+                <div class="shirt-2"></div>
+            </figure>
+            <div>
+              <label class="required">
+                <span>Username</span>
+                <input type="text" name="username" class="main-input" id="username" placeholder="Username" required />
+              </label>
+            </div>
+            <div>
+              <label class="required">
+                <span>Password</span>
+                <input type="password" name="password" class="main-input" id="password" placeholder="Password" required />
+              </label>
+            </div>
+            <div class="show-container">
+              <label class="show-pass-container"> 
+                <input type="checkbox" name="show-password" id="show-password" />
+                <span class="checkbox-label">Show Password</span>
+              </label>
+            </div>
+            <button type="submit" id="submit">Log in</button>
+            <div class="forgot-password">
+              <a href="#">Forgot password?</a>
+            </div>
+          </form>
+        <script src="./formFunctions.js" async defer></script>
+    </body>
+</html>
